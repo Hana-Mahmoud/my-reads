@@ -1,5 +1,5 @@
 import "./App.css";
-import PageNotFound from "./pages/PageNotFound/PageNotFound";
+import PageNotFound from "./pages/NotFound/NotFound";
 import { Routes, Route } from 'react-router-dom';
 import Home from "./pages/Home/Home";
 import Search from "./pages/search/Search";

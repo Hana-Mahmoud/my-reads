@@ -1,6 +1,6 @@
 import React from "react";
 import Shelf from "./Shelf";
-import { useAppSelector } from '../store/bookSlice';
+import { useAppSelector } from '../store/slice';
 
 const Shelves = () => {
 const allBooks: any = useAppSelector<any>((state) => state?.books?.books);

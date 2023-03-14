@@ -1,8 +1,8 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { updateBook } from "../store/bookActions";
-import { useAppSelector } from "../store/bookSlice";
-import { Dispatcher } from "../store/bookStore";
+import { updateBook } from "../store/actions";
+import { useAppSelector } from "../store/slice";
+import { Dispatcher } from "../store/store";
 
 const Book=(props: any)=> {
         const allBooks: any = useAppSelector<any>((state) => state?.books?.books);

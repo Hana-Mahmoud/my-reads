@@ -1,5 +1,5 @@
 import Book from './Book';
-import { useAppSelector } from '../store/bookSlice';
+import { useAppSelector } from '../store/slice';
 
 
 const FilteredBooks = (props: any) => {

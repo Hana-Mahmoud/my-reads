@@ -1,9 +1,9 @@
 
 import SearchInput from '../../UI/SearchInput/SearchInput';
-import { useAppSelector } from '../../store/bookSlice';
+import { useAppSelector } from '../../store/slice';
 import { useDispatch } from 'react-redux';
-import { Dispatcher } from '../../store/bookStore';
-import { searchBooks } from '../../store/bookActions';
+import { Dispatcher } from '../../store/store';
+import { searchBooks } from '../../store/actions';
 import FilteredBooks from '../../Book-shelf/FilteredBooks';
 
 const Search = () => {

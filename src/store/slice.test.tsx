@@ -1,4 +1,4 @@
-import bookReducer, { bookAction } from "./bookSlice";
+import bookReducer, { bookAction } from "./slice";
 
 export const MockBooks = {
     "books": [
@@ -55,17 +55,17 @@ export const MockBooks = {
     ] 
 }
 describe("booksSlice", () => {
-    it("should set state for the books provided if the books changes", () => {
-        const initialState = undefined;
-        const action = bookAction.getAllBooks(MockBooks)
-        const result = bookReducer(initialState, action);
-        expect(result.books).toEqual(MockBooks);
-    });
     it("should return the initialState ", () => {
         const initialState = undefined;
         const action = bookAction.getAllBooks(undefined)
         const result = bookReducer(initialState, action);
         expect(result.books).toEqual(undefined);
+    });
+    it("should set state for the books provided if the books changes", () => {
+        const initialState = undefined;
+        const action = bookAction.getAllBooks(MockBooks)
+        const result = bookReducer(initialState, action);
+        expect(result.books).toEqual(MockBooks);
     });
     it("should Update state with the new books", () => {
         const initialState = undefined;

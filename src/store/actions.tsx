@@ -1,6 +1,6 @@
 import * as BookAPI from '../BooksAPI';
 import { Dispatch } from "redux";
-import { bookAction } from './bookSlice';
+import { bookAction } from './slice';
 
 export const getAllBooksApi = () => (dispatch: Dispatch) => {
     BookAPI.getAll().then(books =>{

@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { TypedUseSelectorHook, useSelector } from "react-redux";
-import { RootState } from "./bookStore";
+import { RootState } from "./store";
 
 const bookSlice = createSlice({
     name: 'bookSlice',
