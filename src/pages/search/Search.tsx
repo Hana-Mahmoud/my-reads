@@ -12,7 +12,6 @@ const Search = () => {
       dispatch(searchBooks(value));
     }
     const filteredBookList: any = useAppSelector<any>((state) => state?.books?.searchResultBooks);
-    console.log(filteredBookList)
     return(
         <div className = "app">
             { (

@@ -8,7 +8,6 @@ const FilteredBooks = (props: any) => {
   const chosenBooksFiltered = allBooks.filter((book:any) => filteredBookList.find((book2:any) => book.id === book2.id )) 
   const mergedBooks= filteredBookList.map((obj:any) => chosenBooksFiltered.find((o:any) => o.id === obj.id) || obj);
 
-
     return (
         <div>
         {
